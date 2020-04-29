@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Home - Recycling Otago</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro" rel="stylesheet"/>
+        
+        <script type="text/javascript">
+			function allowDrop(ev)
+			{
+				ev.preventDefault();
+			}
+
+			function drag(ev)
+			{
+				ev.dataTransfer.setData("Text",ev.target.id);
+			}
+
+			function drop(ev)
+			{
+				ev.preventDefault();
+				var data = ev.dataTransfer.getData("Text");
+                
+				if (data == "syringe" || data == "glass-bottle")
+				{
+					alert("You cannot put a " + data + " into that recycling bin!");
+				}
+                
+                else
+                {
+                    /*ev.target.appendChild(document.getElementById(data));*/
+                    document.getElementById(data).style.display = "none";
+                    alert("Correct! A " + data + " can go into the recycling bin.");
+                }
+                
+			}
+		</script>
+    </head>
+    
+    <body>
+        <nav>
+            <div class="nav-logo">
+                <a href="index.html">Recycling Otago</a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="your-area.html">Recycling in Your Area</a></li>
+                    <li><a href="ewaste.html">E-Waste</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+        
+        <main id="top-of-page">
+            <div class="contact-page landing">
+                <!--<img src="images/plastic-straws.jpg" alt="Plastic Straws"/>-->
+                <div class="landing-text">
+                    <h1>Recycling made easy.</h1>
+                    <h2>All of your recycling questions answered <br />in one place.</h2>
+                </div>
+            </div>
+            
+            <div class="intro">
+                <h1>Take ownership of your <br />waste footprint.</h1>
+                <h2>Not all waste is recycled.</h2>
+                <p> A lot is still sent to landfills or is straying into our environment. When we buy products, we also buy the packaging. We are responsible for the amount of packaging going into our waste streams. When you buy a product you also buy the waste, you are responsible for it.</p>
+                <h2 class="final-remark">Waste starts with you and ends with you.</h2>
+            </div>
+            
+            <div class="main-content">
+                <h1>Be more environmentally friendly.</h1>
+                <p>Being environmentally friendly simply means having a lifestyle that are better for the environment. Its all about taking small steps towards mother earth so as to make this planet a better place for our communities and generations to come.</p>
+                <h2>How do I do this?</h2>
+                <p>A good way would be to start with conserving water, driving less and walking more, consuming less energy, buying recycled products, eating locally grown vegetables, joining environmental groups to combat air pollution, creating less waste, and planting more trees.</p>
+            </div>
+            
+            <div class="dragdrop-game" id="game">
+                <h1>How good are you?</h1>
+                <p>Drag the correct items into the correct recycling bin to test your knowledge.</p>
+                <div id="recycling-bin" ondragover="allowDrop(event)" ondrop="drop(event)">
+                
+                   <!-- <img src="images/recycling-game/recycling-bin.png" draggable="false"/>-->
+                </div>         
+                <div class="game-images">
+                    <img id="newspaper" src="images/recycling-game/newspaper.png" draggable="true" ondragstart="drag(event)"/>
+                    <img id="milk-bottle" src="images/recycling-game/milk-bottle.png" draggable="true" ondragstart="drag(event)"/>
+                    <img id="syringe" src="images/recycling-game/syringe.png" draggable="true" ondragstart="drag(event)"/>
+                    <img id="cardboard-box" src="images/recycling-game/cardboard.png" draggable="true" ondragstart="drag(event)"/>
+                    <img id="glass-bottle" src="images/recycling-game/glass-bottle.png" draggable="true" ondragstart="drag(event)"/>
+                </div>
+                <div class="arrow-anchor alt-arrow-anchor">
+                    <a href="your-area.html"><div class="arrow-right"></div>Learn about correct recycling</a>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                
+                <div class="references">
+                    <ul>
+                        <li>References</li>
+                        <li><a href="https://www.conserve-energy-future.com/15-easy-ways-to-become-environmentally-friendly.php">Environmentally Friendly</a></li>
+                    </ul>
+                </div>
+                
+                <div class="anchors">
+                    <ul>
+                        <li><a href="#top-of-page">Back to Top</a></li>
+                    </ul>
+                </div>
+
+                <div class="page-links">
+                    <ul>
+                        <li><a href="your-area.html">Recycling in Your Area</a></li>
+                        <li><a href="ewaste.html">E-Waste</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="author-info">
+                    <p class="recycling-otago-footer">Recycling Otago.</p>
+                    <p>Website Created by Isaac Underwood.</p>
+                    <script type="text/javascript">
+                        document.writeln('<p class="last-modified">Last Modified: ' + document.lastModified + '</p>');
+                    </script>
+                </div>
+            </div>
+            
+    
+        </footer>
+    </body>
+    
+</html>

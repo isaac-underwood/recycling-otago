@@ -1,0 +1,829 @@
+/*---------------------------------------------------*/
+/*-------------- GLOBAL STYLE GUIDE -----------------*/
+/*---------------------------------------------------*/
+/*                     Fonts                         */
+/*          Headings: Montserrat (Sans-Serif)        */
+/*          Body: Source Sans Pro (Sans-Serif)       */
+/*---------------------------------------------------*/
+/*                    Colours                        */
+/*Nav Bar Background: White rgba(255, 255, 255, 0.7) */
+/*
+/* Palette color codes:
+/* Palette URL: http://paletton.com/#uid=12M0u0kp7pqf3xEk8s0rMknwWfk */
+/* As hex codes */
+/*
+/*.color-primary-0 { color: #36A824 }	/* Main Primary color */
+/*.color-primary-1 { color: #7FD571 }
+/*.color-primary-2 { color: #54B944 }
+/*.color-primary-3 { color: #228612 }
+/*.color-primary-4 { color: #0E6500 }
+/*
+/*
+/*
+/* As RGBa codes
+/*
+/*.rgba-primary-0 { color: rgba( 54,168, 36,1) }	/* Main Primary color */
+/*.rgba-primary-1 { color: rgba(127,213,113,1) }
+/*.rgba-primary-2 { color: rgba( 84,185, 68,1) }
+/*.rgba-primary-3 { color: rgba( 34,134, 18,1) }
+/*.rgba-primary-4 { color: rgba( 14,101,  0,1) }
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+
+
+/*------------------GLOBAL STYLES--------------------*/
+
+html
+{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body
+{
+    height: 100%;
+    margin: 0;
+}
+
+h1
+{
+    font: 'Montserat';
+    letter-spacing: 1x;
+    word-spacing: 2px;
+}
+
+h2
+{
+    font: 'Montserat';
+    word-spacing: 1px;
+    color: #228612;
+}
+
+p
+{
+    font: 'Source Sans Pro';
+    letter-spacing: 0.5px;
+    font-size: 20px;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+    a:hover
+    {
+        color: #228612;
+        transition: color 0.5s;
+    }
+
+img
+{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+nav                                                     /*NAVIGATION*/
+{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 0.5px solid rgba(180, 180, 180, 0.8);
+    position: fixed;
+    text-align: center;
+}
+
+    nav ul
+    {
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+        nav li
+        {
+
+            /*clear: both;*/
+            margin: 0 auto;
+            display: inline-block;
+            padding: 20px;
+
+        }
+
+        nav a
+        {
+            margin: 0 auto;
+            padding: 5px 10px 5px 0;
+        }
+
+.nav-logo
+{
+    float: left;
+    display: block;
+    font-size: 32px;
+    padding: 12px 5px 10px 25px;
+    margin-left: 2.5%;
+}
+
+    .nav-logo a
+    {
+        color: green;
+        font-weight: bold;
+    }
+
+.nav-links
+{
+    width: 50%;
+    margin: 0 auto;
+}
+
+main
+{
+    padding-top: 70px;
+    text-align: center;
+}
+
+    main h1
+    {
+        color: #0E6500;
+        font-size: 70px;
+        margin: 0 0 3%;
+    }
+                                                            /*LANDING*/
+.landing
+{
+    font: 'Montserat';
+    height: 500px;
+    /*position: relative;*/
+    overflow: hidden;
+    background-size: 100%;
+	background-image: url("../images/beach-landscape.jpg");
+	background-size: cover;
+}
+
+/*
+    .landing-text 
+    {
+        background-color: rgba(255, 255, 255, 0.5);
+        margin-top: 20%;
+        padding: 0 0 2px 20px;
+        text-align: left;
+        letter-spacing: 1px;
+        width: 41%;
+    }
+
+        .landing-text h1, h2
+        {
+            margin: 10px;
+        }
+
+        .landing-text h1
+        {
+            font-size: 60px;
+        }
+
+        .landing-text h2
+        {
+            font-size: 28px;
+        }*/
+
+    .landing-text
+    {
+        margin-top: 7%;
+        text-align: center;
+        color: white;
+    }
+
+    .landing-text h1
+    {
+        font-size: 90px;
+        color: #fff;
+        margin: 0;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+        text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    }
+
+    .landing-text h2
+    {
+        color: #fff;
+        padding-top: 40px;
+        font-size: 40px;
+        letter-spacing: 1px;
+        text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    }
+                                                /*MAIN CONTENT*/
+.main-content
+{
+    text-align: center;
+    width: 70%;
+    margin: 3% auto;
+    clear: both;
+}
+    .main-content h1
+    {
+        font-size: 70px;
+    }
+
+    .main-content a
+    {
+        color: #228612;
+    }
+
+.alt-main-content
+{
+    background-color: #36A824;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+    .alt-main-content h1
+    {
+        color: #fff;
+    }
+
+    .alt-main-content h2
+    {
+        color: #fff;
+    }
+
+    .alt-main-content a
+    {
+        color: #fff;
+    }
+
+        .alt-main-content a:hover
+        {
+            color: #fff;
+        }
+                                                /*FOOTER*/
+footer
+{
+    clear: both;
+    margin-top: 1%;
+    height: 200px;
+    
+}
+
+    footer li
+    {
+        list-style: none;
+        padding: 5px;
+    }
+
+    footer a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+.footer-content
+{
+    width: 70%;
+    padding: 2% 15% 5px 15%;
+}
+
+.references
+{
+    float: right;
+    
+}
+
+.recycling-otago-footer
+{
+    color: #36A824;
+}
+
+.author-info
+{
+    text-align: center;
+    margin-top: 5%;
+    bottom: 0;
+}
+
+    .author-info p
+    {
+        margin: 5px;
+        font-size: 16px;
+    }
+
+.last-modified
+{
+    color: #778899;
+    font-size: 14px;
+}
+/*-----------------'HOME' PAGE STYLES----------------*/
+
+.intro
+{
+    margin: 5% 15% 10% 15%;
+    width: 70%;
+    text-align: center;
+}
+
+    .intro h1
+    {
+        padding: 7.5% 0 15px;
+        
+    }
+
+    .intro h2
+    {
+        font-size: 30px;
+        margin: 10px 10px 3%;
+        font-weight: normal;
+    }
+
+    .intro p
+    {
+        width: 60%;
+        padding: 1%;
+        margin: 0 auto;
+    }
+
+    .intro .final-remark
+    {
+        margin-top: 3%;
+    }
+
+                                                    /*DRAG DROP GAME*/
+.dragdrop-game
+{
+    
+    width: 100%;
+    
+    background-color: #36A824;
+    text-align: center;
+}
+
+    .dragdrop-game h1
+    {
+        font-size: 60px;
+        /*color: #7FD571;*/
+        color: #fff;
+        margin: 0;
+        padding: 30px 0 10px 0;
+    }
+
+    .dragdrop-game h2
+    {
+        
+        top: 10px;
+    }
+
+    .dragdrop-game p
+    {
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        margin: 0;
+    }
+
+#recycling-bin
+{
+    background-image: url("../images/recycling-game/recycling-bin.png");
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+#blue-bin
+{
+    background-image: url("../images/recycling-game/blue-bin.png");
+    background-size: contain;
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+   
+}
+
+.game-images
+{
+    
+    margin: 0 auto;
+    
+}
+
+    .game-images img
+    {
+        height: 125px;
+    }
+
+
+
+
+/*-----------------'ABOUT' PAGE STYLES---------------*/
+
+.about-landing
+{
+    background-image: url("../images/lake-benmore.jpg");
+    background-position: center;
+}
+
+.arrow-anchor
+{
+    width: 25%;
+    margin: 2% auto;
+    
+}
+
+.alt-arrow-anchor a
+{
+    color: #fff;
+}
+
+    .alt-arrow-anchor a:hover
+    {
+        color: #fff;
+    }
+
+.alt-arrow-anchor .arrow-right
+{
+    border-left: 12px solid #fff;
+}
+
+
+.arrow-right
+{
+    float: right;
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+
+    border-left: 12px solid #000;
+}
+
+    .arrow-right:hover
+    {
+        border-left: 15px solid green;
+        transition: 1.0s;
+    }
+/*-----------------'Your Area' PAGE STYLES-----------*/
+
+.checkmark /*from: https://codepen.io/lajlev/pen/diKbz*/
+{
+    display:inline-block;
+    padding-left: 40%;
+}
+
+  .checkmark:after
+    {
+        /*Add another block-level blank space*/
+        content: '';
+        display: block;
+
+        /*Make it a small rectangle so the border will create an L-shape*/
+        width: 12px;
+        height: 24px;
+
+        /*Add a white border on the bottom and left, creating that 'L' */
+        border: solid #36A824;
+        border-width: 0 4px 4px 0;
+
+        /*Rotate the L 45 degrees to turn it into a checkmark*/
+        transform: rotate(45deg);
+      }
+
+.cross 
+{
+    width: 24px;
+    height: 24px;
+    padding-left: 40%;
+}
+
+    .cross:before, .cross:after 
+    {
+      position: absolute;
+      content: ' ';
+      height: 33px;
+      width: 4px;
+      background-color: #ff0000;
+    }
+
+    .cross:before 
+    {
+      transform: rotate(45deg);
+    }
+
+    .cross:after 
+    {
+      transform: rotate(-45deg);
+    }
+
+
+.anchor-sub-nav
+{
+ 
+}
+
+    .anchor-sub-nav li
+    {
+        display: inline-block;
+        padding: 0 5%;
+        font-size: 18px;
+    }
+
+    .anchor-sub-nav a:hover
+    {
+        border-bottom: 2px solid #36A824;
+    }
+
+table
+{
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+    width: 70%;
+}
+
+table, th, td
+{
+    border: 0.5px solid black;
+}
+
+th, td
+{
+    padding: 5px;
+}
+
+th
+{
+    font-size: 20px;
+    text-align: center;
+    height: 30px;
+}
+
+td
+{
+    text-align: left;
+    height: 100px;
+    
+}
+
+.item-allowed:hover
+{
+    background-color: #7FD571;
+    font-weight: bold;
+    transition: 0.5s;
+    
+}
+
+.item-not-allowed:hover
+{
+    background-color: #d57171;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.bluebin-req
+{
+    margin: 1% 25%;
+    font-size: 18px;
+}
+
+    .bluebin-req li
+    {
+        text-align: left;
+        margin: 1%;
+        color: #000;
+        list-style: disc;
+    }
+
+.your-area-list
+{
+    list-style: none;
+    text-align: left;
+    margin: 0 auto;
+    color: #54B944;
+    
+    font-size: 20px;
+}
+
+    .your-area-list li
+    {
+        text-align: center;
+        margin: 2%;
+    }
+
+    .your-area-list a
+    {
+        color: #54B944;
+        text-decoration: underline;
+    }
+
+    .alt-main-content .your-area-list a
+    {
+        color: #fff;
+        
+    }
+
+        .alt-main-content .your-area-list a:hover
+        {
+            color: #fff;
+        }
+
+    .alt-main-content .your-area-list li
+    {
+        color: #fff;
+        padding-right: 3%;
+    }
+
+    .your-area-list a:hover
+    {
+        color: #36A824;
+        font-weight: bold;
+    }
+
+.hours-operation
+{
+    height: 75px;
+}
+
+
+.bin-guide
+{
+    width: 600px;
+}
+
+    .bin-guide:hover
+    {
+        width: 650px;
+        transition: 0.5s;
+    }
+
+/*-----------------'E-Waste' PAGE STYLES-------------*/
+
+.ewaste-landing
+{
+    background-image: url("../images/e-waste.jpg");
+}
+
+.grid
+{
+    display: table;
+    border-collapse: collapse;
+}
+
+.row
+{
+    display: table-row;
+}
+
+.row:nth-child(even)
+{
+    background-color: #7FD571;
+}
+
+.row-info
+{
+    display: table-cell;
+    width: 25%;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+/*-----------------'CONTACT' PAGE STYLES-------------*/
+
+.contact-page
+{
+    background-image: url(../images/otago-landscape-mountains.jpg);
+    height: 500px;
+}
+
+.contact-form
+{
+    margin: 0 auto;
+    width: 15%;
+}
+
+    .contact-form p
+    {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .contact-form input
+    {
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid #7FD571;
+    }
+
+.contact-a-center
+{
+    width: 400px;
+    padding: 5px;
+    margin: 1%;
+    border-radius: 3px;
+    float: left;
+}
+
+    .contact-a-center:hover
+    {
+        border: 1px solid rgba(127,213,113,0.5);
+        -webkit-border: border: 1px solid rgba(127,213,113,0.5);
+        -moz-border: border: 1px solid rgba(127,213,113,0.5);
+        transition: 1.0s;
+        width: 405px;
+    }
+
+iframe
+{
+    width: 75%;
+    height: 300px;
+}
+/*------------------MEDIA QUERIES--------------------*/
+
+@media screen and (max-width: 1470px)
+{
+    .nav-links
+    {
+        width: 100%;
+    }
+    
+    .nav-links a
+    {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1100px)
+{
+    
+    .contact-a-center
+    {
+        width: 300px;
+        height: 500px;
+    }
+    
+    .contact-form
+    {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    p
+    {
+        font-size: 18px;
+    }
+    .main-content
+    {
+        width: 90%;
+    }
+    
+    .nav-logo a
+    {
+        font-size: 24px;
+    }
+    
+    .landing
+    {
+        height: 350px;
+    }
+    
+    .landing-text h1
+    {
+        font-size: 70px;
+    }
+    
+    .intro
+    {
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    .intro h1
+    {
+        font-size: 60px;
+    }
+    
+    .intro h2
+    {
+        font-size: 24px;
+    }
+    
+    .bin-guide
+    {
+        width: 60%;
+    }
+    
+    .contact-a-center
+    {
+        clear: both;
+        margin: 0 auto;
+        margin-left: 25%;
+    }
+}
